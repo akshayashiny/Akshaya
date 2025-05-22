@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const bentoItems = [
   {
     title: 'B.Tech Computer Science',
-    subtitle: 'XYZ University',
+    subtitle: 'SRM AP University',
     desc: '2019 - 2023 | CGPA: 9.1',
     className: 'large one',
   },
