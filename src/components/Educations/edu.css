@@ -1,0 +1,90 @@
+/* Bento grid styles for Education component */
+.edu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+  gap: 20px;
+  padding: 40px 0;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0;
+  width: 100vw;
+  overflow:visible;
+  margin-bottom: 5%;
+}
+
+.bento-item {
+  border: .5px solid rgb(158, 175, 200);
+  background: linear-gradient(-30deg, #313131 50%, #454441 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px;
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.bento-item:hover {
+  border: 1.5px solid rgb(129, 157, 199);
+  border-style:dotted;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  transform: translateY(40px);
+}
+
+.bento-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+  font-size: 1.5rem;
+}
+
+.one{
+  border-top-left-radius: 200px;
+  align-items: center;
+}
+
+.two{
+  border-top-right-radius: 150px;
+}
+.three{
+  border-top-left-radius: 150px;
+  align-items: flex-end;
+}
+.four{
+  align-items: center;
+  border-bottom-right-radius: 150px;
+  border-top-left-radius: 150px;
+}
+.five{
+  border-bottom-left-radius: 150px;
+  align-items: flex-end;
+}
+.dis{
+  font-family: 'Annie Use Your Telescope';
+}
+
+
+@media (max-width: 900px) {
+  .edu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .edu {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px 0;
+  }
+  .bento-item {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}

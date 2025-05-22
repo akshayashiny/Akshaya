@@ -1,0 +1,47 @@
+.Hero{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details{
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  cursor:pointer
+}
+.details:hover .name{
+  font-size: 3em;
+  line-height: .8em;
+}
+.details:hover {
+  text-align: left;
+  align-items: start;
+color: rgb(166, 166, 166);
+}
+.name{
+  position: relative;
+  padding: 15px;
+  background: linear-gradient(130deg, rgb(255, 255, 255) 5%,rgb(38, 233, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s ease;
+  z-index: 1;
+  font-family: 'Annie Use Your Telescope', cursive;
+  animation: fontscaledown 5s ease;
+}
+@keyframes fontscaledown {
+  0% {
+    font-size: 2em;
+  }
+  100% {
+    font-size: 1em;
+  }
+  
+}
+
